@@ -42,6 +42,6 @@ organismo_graph <- rc_dt[, .(count = .N), organismo][order(-count)][1:19] %>%
 
 
 ## Guardar visualización ####
-ggsave(here("output", paste0(format(Sys.time(), "%Y%m%d_%H%M"), "_ramonycajal.png")), 
+ggsave(here("output", paste0(format(Sys.time(), "%Y%m%d"), "_ramonycajal.png")), 
        height = 12, 
        width = 12)

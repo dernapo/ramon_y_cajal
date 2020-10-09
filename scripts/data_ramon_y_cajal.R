@@ -71,6 +71,9 @@ rc_dt <- rbindlist(dt_list2)
 # Limpiar
 rc_dt <- rc_dt[!organismo == "Nombre de Organismo firma acuerdo de incorporación"]
 
+rc_dt <- rc_dt[!area == "Area Temática"]
+
+
 # Limpiar espacios al principio y al final
 rc_dt[, nombre := str_trim(nombre)] 
 
